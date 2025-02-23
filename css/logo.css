@@ -1,0 +1,36 @@
+/* Style général pour le texte du logo */
+.logo {
+    font-family: 'Montserrat', sans-serif; /* Utilisation de la police Montserrat pour un style moderne et épuré */
+    font-size: 40px; /* Taille de la police ajustée pour assurer une bonne lisibilité */
+    font-weight: bold; /* Met le texte en gras pour le rendre plus visible */
+    color: #FFD8B7; /* Définit une couleur douce et harmonieuse avec la palette du site */
+    text-align: center; /* Centre le texte horizontalement */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile pour un effet de relief */
+    margin-left: 150px; /* Décale le logo vers la droite */
+    transition: color 0.3s ease, transform 0.3s ease; /* Applique une transition fluide sur la couleur et la transformation */
+    cursor: pointer; /* Change le curseur en mode pointer pour indiquer une interaction possible */
+}
+
+/* Style pour le mot "For" */
+.logo span:first-child {
+    color: #FFD8B7; /* Maintient la même couleur pour le mot "For" */
+}
+
+/* Style spécifique pour le point dans le logo */
+#sp {
+    color: #A65437; /* Applique une couleur différente pour mettre en avant le point */
+    font-size: 1.5em; /* Agrandit légèrement le point pour qu’il ressorte */
+    margin-left: 0.1em; /* Ajoute un léger espacement entre le texte et le point */
+}
+
+/* Effet de hover sur le logo */
+.logo:hover {
+    color: #A65437; /* Change la couleur du texte au survol pour créer un effet dynamique */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Renforce l'ombre pour un effet de profondeur plus marqué */
+    transform: scale(1.1); /* Agrandit légèrement le logo pour attirer l'attention */
+}
+
+/* Masque l'icône de navigation par défaut */
+nav .icon {
+    display: none; /* Caché par défaut, peut-être utilisé pour une version responsive plus tard */
+}

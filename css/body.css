@@ -1,0 +1,31 @@
+/* Importation de la police Google Fonts "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Réinitialisation des marges et des paddings de tous les éléments */
+/* La propriété box-sizing: border-box permet d'inclure padding et border dans la largeur et la hauteur */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Activation du comportement de défilement fluide pour les ancres */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style général du corps de la page */
+body {
+    background-color: #FFD8B7; /* Définit un fond beige/orangé clair */
+    font-family: "Poppins", sans-serif; /* Applique la police "Poppins" */
+}
+
+/* Style des liens */
+a {    
+    color: #A65437; /* Applique une couleur brun/orange aux liens */
+}
+
+/* Style des titres de niveau 1 */
+h1 {
+    color: #A65437; /* Applique la même couleur brun/orange aux titres h1 */
+}

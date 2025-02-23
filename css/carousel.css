@@ -1,0 +1,144 @@
+/* Importation de la police Jost depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+
+/* Réinitialisation des styles de base pour assurer une mise en page cohérente sur tous les navigateurs */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Jost", "sans-serif"; /* Applique la police Jost à tous les éléments */
+}
+
+/* Conteneur principal du slider */
+.slider-container {
+    width: 100%;
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD8B7; /* Couleur de fond en harmonie avec la palette du site */
+}
+
+/* Conteneur des images du slider */
+.slider-images {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacement entre les images */
+}
+
+/* Style des images du slider */
+.slider-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre tout l'espace sans être déformée */
+    border-radius: 10px; /* Ajoute un arrondi aux coins */
+}
+
+/* Style général des images dans le slider */
+.slider-img {
+    width: 70px; /* Taille initiale réduite des images */
+    border-radius: 10px;
+    cursor: pointer; /* Change le curseur pour indiquer qu'elles sont cliquables */
+    position: relative;
+    transition: all 0.5s ease-in-out; /* Transition fluide lors du changement de taille */
+}
+
+/* Ajustement de la hauteur des images en fonction de leur position dans la liste */
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child {
+    height: 30vh;
+}
+
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6) {
+    height: 40vh;
+}
+
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(5), .slider-images .slider-img:nth-child(4) {
+    height: 50vh;
+}
+
+/* Titre superposé sur chaque image du slider */
+.slider-img h2 {
+    font-family: "Jost", "sans-serif";
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: rotate(270deg); /* Rotation pour afficher le texte verticalement */
+    transition: 0.7s ease;
+}
+
+/* Variation de positionnement du texte sur certaines images */
+.left h2 {
+    font-family: "Jost", "sans-serif";
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: -60%;
+    transform: rotate(270deg);
+    transition: 0.7s ease;
+}
+
+/* Conteneur des détails affichés sur l'image active */
+.details {
+    position: absolute;
+    bottom: 43px;
+    left: 43px;
+}
+
+/* Titre des détails */
+.details h3 {
+    font-family: "Jost", "sans-serif";
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none; /* Caché par défaut */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Paragraphe et lien des détails */
+.details p, .details a {
+    font-family: "Jost", "sans-serif";
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 28px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none; /* Caché par défaut */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Style de l'image active sélectionnée */
+.slider-img.active {
+    width: 380px !important;
+    height: 440px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour mettre en avant l'image active */
+    transform: scale(1.05); /* Effet de zoom léger pour attirer l'attention */
+}
+
+/* Masque le titre sur l'image active */
+.slider-img.active h2 {
+    display: none;
+}
+
+/* Affichage des détails uniquement lorsque l'image est active */
+.slider-img.active .details p, 
+.slider-img.active .details h3, 
+.slider-img.active .details a {
+    display: block;
+    opacity: 1;
+}

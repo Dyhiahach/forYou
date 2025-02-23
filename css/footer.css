@@ -1,0 +1,90 @@
+/* Section du pied de page */
+footer {
+    background-color: #A65437; /* Applique une couleur de fond cohérente avec le reste du site */
+    color: #FFFFFF; /* Définit la couleur du texte en blanc pour un bon contraste */
+    padding: 20px 30px; /* Ajoute de l'espace autour du contenu */
+    display: flex; /* Utilise Flexbox pour organiser le contenu */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+/* Conteneur principal du footer */
+.footer-container {
+    display: flex; /* Utilise Flexbox pour aligner les différentes sections du footer */
+    flex-wrap: wrap; /* Permet le passage en plusieurs lignes si l’espace est insuffisant */
+    justify-content: space-between; /* Répartit les éléments de manière uniforme */
+    max-width: 1200px; /* Définit une largeur maximale pour éviter une extension excessive */
+    width: 100%; /* Assure que le footer prend toute la largeur disponible */
+}
+
+/* Style des différentes sections du footer */
+.footer-container > div {
+    flex: 1; /* Permet une répartition équitable de l’espace */
+    min-width: 220px; /* Assure une largeur minimale pour éviter des problèmes d'affichage */
+}
+
+/* Ajoute un espace en bas pour les sections des liens, du contact et des réseaux sociaux */
+.footer-links, .footer-contact, .footer-social {
+    margin-bottom: 30px;
+}
+
+/* Style des titres des différentes sections */
+.footer-links h2, .footer-contact h2, .footer-social h2 {
+    font-size: 24px; /* Définit une taille de police lisible */
+    font-weight: 600; /* Rend le titre plus visible */
+    margin-bottom: 15px; /* Ajoute un espace sous le titre */
+    color: #FFE1CD; /* Applique une couleur harmonieuse avec le design */
+}
+
+/* Centrage du titre de la section contact */
+.footer-contact h2 {
+    text-align: center;
+}
+
+/* Style du texte de contact */
+.footer-contact p {
+    font-size: 16px; /* Taille de police standard */
+    line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+    color: #FFE1CD; /* Applique la même couleur que les titres */
+}
+
+/* Style des liens dans la section des liens utiles */
+.footer-links a {
+    display: block; /* Place chaque lien sur une ligne distincte */
+    font-size: 16px; /* Taille de police adaptée */
+    color: #FFE1CD; /* Applique la couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    margin-bottom: 10px; /* Ajoute un espacement entre chaque lien */
+}
+
+/* Effet hover sur les liens */
+.footer-links a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+    color: #D98C5F; /* Change la couleur du texte au survol */
+}
+
+/* Centrage du bloc des réseaux sociaux */
+.footer-social {
+    text-align: center;
+}
+
+/* Style des icônes des réseaux sociaux */
+.social-icon {
+    display: inline-block; /* Affichage en ligne */
+    font-size: 24px; /* Taille de l’icône */
+    color: #FFE1CD; /* Couleur de base des icônes */
+    margin: 0 10px; /* Ajoute un espacement entre les icônes */
+    transition: color 0.3s; /* Anime le changement de couleur */
+}
+
+/* Effet hover sur les icônes des réseaux sociaux */
+.social-icon:hover {
+    color: #D98C5F; /* Change la couleur des icônes au survol */
+}
+
+/* Bas du footer */
+.footer-bottom p {
+    text-align: center; /* Centre le texte */
+    font-size: 16px; /* Taille de police */
+    color: #FFE1CD; /* Applique la couleur du texte */
+}

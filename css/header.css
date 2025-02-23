@@ -1,0 +1,124 @@
+/* Style du header */
+header {
+    background-image: url(../images/back3.png); /* Définit une image d’arrière-plan pour le header */
+    background-repeat: no-repeat; /* Empêche la répétition de l’image */
+    background-size: cover; /* Ajuste l’image pour couvrir toute la zone du header */
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex; /* Utilise flexbox pour organiser les éléments horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    max-width: 1500px; /* Définit une largeur maximale pour la navbar */
+    padding-left: 25px; /* Ajoute un padding à gauche */
+    padding-right: 25px; /* Ajoute un padding à droite */
+}
+
+/* Conteneur du menu de navigation */
+nav {
+    flex: 1; /* Permet au nav de prendre toute la place restante */
+    text-align: right; /* Aligne le contenu du menu à droite */
+}
+
+/* Liste des éléments de navigation */
+nav ul {
+    display: inline-block; /* Permet d'afficher la liste horizontalement */
+    list-style-type: none; /* Supprime les puces de la liste */
+}
+
+/* Éléments de la liste */
+nav ul li {
+    display: inline-block; /* Affiche les éléments en ligne */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+/* Liens dans la navigation */
+nav ul li a {
+    position: relative; /* Permet d'ajouter un effet décoratif en pseudo-élément */
+}
+
+/* Effet hover sur les liens */
+nav ul li a:hover {
+    font-weight: bolder; /* Rend le texte plus gras */
+    font-size: 25px; /* Agrandit légèrement le texte */
+    color: white; /* Change la couleur en blanc */
+}
+
+/* Animation sous les liens au survol */
+nav ul li a::after {
+    content: ''; /* Ajoute un élément décoratif */
+    width: 0; /* Cache la ligne par défaut */
+    height: 3px; /* Définit l’épaisseur de la ligne */
+    background-color: white; /* Définit la couleur de la ligne */
+    position: absolute; /* Positionne la ligne par rapport au lien */
+    left: 0;
+    bottom: -6px; /* Place la ligne sous le texte */
+    transition: 0.5s; /* Anime l’apparition de la ligne */
+}
+
+/* Affiche la ligne sous le lien au survol */
+nav ul li a:hover::after {
+    width: 100%; /* Fait apparaître la ligne sous tout le texte */
+}
+
+/* Style des liens généraux */
+a {
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Style des paragraphes */
+p {
+    color: #9D7150; /* Définit une couleur marron clair */
+    text-align: center; /* Centre le texte */
+}
+
+/* Mise en page de la section principale */
+.row {
+    width: 100%; /* Prend toute la largeur */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+/* Style pour une colonne spécifique */
+.col-2 {
+    width: 640px; /* Définit une largeur fixe */
+    padding: 100px 0px; /* Ajoute un espace en haut et en bas */
+    margin: 0px 370px; /* Centre horizontalement en utilisant les marges */
+}
+
+/* Titres dans la colonne */
+.col-2 h1 {
+    font-size: 40px; /* Taille du texte */
+    line-height: 40px; /* Hauteur de ligne */
+    margin: 25px 0; /* Espacement au-dessus et en dessous */
+    color: #A65437; /* Définit une couleur brun/orangé */
+    text-align: center; /* Centre le texte */
+}
+
+/* Bouton avec une flèche */
+.arrow {
+    cursor: pointer; /* Change le curseur en pointeur */
+    padding: 8px 20px; /* Ajoute du padding interne */
+    margin: 50px 230px; /* Ajoute une marge externe */
+    margin-right: 0;
+    border-radius: 30px; /* Arrondit les bords du bouton */
+    background-color: #FFE1CD; /* Couleur de fond */
+    font-weight: 400; /* Poids du texte */
+    width: 160px; /* Largeur du bouton */
+    transition: background 0.5s; /* Animation du fond */
+}
+
+/* Style du lien dans le bouton */
+.arrow a {
+    margin-right: 8px; /* Espacement entre le lien et l'icône */
+}
+
+/* Style de l'icône */
+.arrow i {
+    color: #A65437; /* Définit la couleur de l'icône */
+}
+
+/* Effet hover sur le bouton */
+.arrow:hover { 
+    background-color: #D98C5F; /* Change la couleur de fond */
+    color: #FFFFFF; /* Change la couleur du texte */
+}
