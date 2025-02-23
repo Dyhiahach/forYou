@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site responsive sur mobile -->
+    <title>ForYou | Ecommerce Website Design</title> <!-- Titre de la page -->
+    
+    <!-- Liens vers les fichiers CSS pour le style -->
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/logo.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    
+    <!-- Inclusion de jQuery -->
+    <script src="../jquery-3.7.1.js"></script>
+    
+    <!-- FontAwesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/a6c1691723.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <div class="container">
+            <div class="navbar"> <!-- Barre de navigation -->
+                <div class="logo"> <!-- Logo du site -->
+                    <p class="logo">For<span class="highlight">You</span><span id="sp">.</span></p>
+                </div>
+                <nav> <!-- Menu de navigation -->
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">Apropos</a></li>
+                        <li><a href="#reviews">Avis</a></li>
+                        <li><a href="#produit">Produits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="connect.html">Compte</a></li>
+                        <p class="icon close">close<i class="fas fa-times" onclick="closemenu()"></i></p>
+                    </ul>
+                    <p class="icon open"><i class="fas fa-bars" onclick="openmenu()"></i>open</p>
+                </nav>
+            </div>
+            <div class="row"> <!-- Section principale du header -->
+                <div class="col-2"> <!-- Texte principal -->
+                    <h1 class="subtitle">Transformez <br> Votre Style avec Élégance</h1>
+                    <p>
+                        Le style n'est pas seulement ce que vous portez, mais comment vous l'affichez.
+                    </p>
+                    <div class="arrow"> <!-- Bouton et flèche -->
+                        <a href="connect.html" class="btn">Explorer plus</a>  
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h1 class="subtitle">Apropos De Nous</h1>
+                <p>
+                    Fondée en 2024, notre marque est dédiée à l'élégance féminine.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="../images/apropos.jpg" alt="Image représentant l'élégance féminine">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Produits -->
+    <section class="slider-container" id="produit">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="../images/carousel-img/bij1.jpg" alt="jewelleries image">
+                <h2>Bijoux</h2>
+            </div>
+            <div class="slider-img">
+                <img src="../images/carousel-img/sac1.jpg" alt="bag image">
+                <h2>Sac</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Avis clients -->
+    <section id="reviews">
+        <h1 class="reviews" class="subtitle">Avis de nos clients</h1>
+        <div class="reviews-list">
+            <div class="review">
+                <div class="review-header">
+                    <img src="../images/profil1.jpg" alt="Photo de Jean-Marc" class="profile-pic">
+                    <h2>Zinedine</h2>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                    "J'ai acheté un magnifique bracelet."
+                </p>
+            </div>                
+        </div>
+    </section>
+    
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-image">
+                <h1 class="subtitle">Contactez Nous:</h1>
+                <img src="../images/contact2.jpg" alt="Contact Us">
+            </div>
+            <div class="contact-form">
+                <form>
+                    <label for="Name"><i class="fa-solid fa-user"></i> Nom:</label>
+                    <input type="text" name="Name" placeholder="votre nom" required>
+                    <button type="submit" class="btn btn2">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h2>Liens Utiles</h2>
+                <a href="#">Politiques de confidentialité</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ForYou. Tous droits réservés</p>
+        </div>
+    </footer>
+    
+    <script src="../js/carousel.js"></script> <!-- Script pour le carrousel -->
+</body>
+</html>
