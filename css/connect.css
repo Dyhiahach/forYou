@@ -1,0 +1,153 @@
+/* Définition du fond de la page */
+body {
+    background-image: url(../images/back3.png); /* Image de fond */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    /*background-attachment: fixed;*/ /* Option pour fixer l'image de fond (désactivée) */
+}
+
+/* Ajustement du padding pour la barre de navigation */
+.navbar {
+    padding-right: 230px;
+}
+
+/* Changement de couleur du texte au survol des liens de navigation */
+nav ul li a:hover{
+    color: #A65437;
+}
+
+/* Ajout d'une couleur de fond sous les liens de navigation */
+nav ul li a::after {
+    background-color: #A65437;
+}
+
+/* Couleur du texte pour les liens à l'intérieur des boutons */
+button a{
+    color: white;
+}
+
+/* Section de connexion */
+#connexion {
+    height: 100vh; /* Hauteur de la section à 100% de la fenêtre visible */
+    display: flex; /* Utilisation de flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    padding-top: 10px; /* Espacement en haut */
+}
+
+/* Conteneur principal pour la connexion et l'inscription */
+.connexion-container {
+    display: flex; /* Affichage en flexbox */
+    align-items: flex-start; /* Alignement des éléments en haut */
+    justify-content: space-between; /* Espacement entre les éléments */
+    max-width: 1200px; /* Largeur maximale du conteneur */
+}
+
+/* Style des titres */
+h1 {
+    text-align: center; /* Centrage du texte */
+    margin-bottom: 10px; /* Espacement sous le titre */
+}
+
+/* Style des blocs connexion et inscription */
+.login, .register {
+    flex: 2; /* Ajustement de la taille */
+    transition: all 0.3s ease-in-out; /* Animation fluide */
+    background-color: #FFE1CD; /* Couleur de fond */
+    padding: 30px; /* Espacement intérieur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+}
+
+/* Mise en page des formulaires */
+.login form, .register form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style des labels */
+.login label, .register label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #A65437; /* Couleur du texte */
+    margin-bottom: 8px; /* Espacement sous le label */
+    display: flex;
+    align-items: center;
+}
+
+/* Icônes à l'intérieur des labels */
+.login label i, .register label i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    color: #A65437; /* Couleur des icônes */
+}
+
+/* Style des champs de saisie */
+.login input, .register input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px; /* Espacement entre les champs */
+    border: 1px solid #A65437; /* Bordure avec couleur définie */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Ajustement de la largeur du champ de mot de passe */
+#pwdd input {
+    width: 85%;
+}
+
+/* Style des placeholders (texte à l'intérieur des champs) */
+.login input::placeholder, .register input::placeholder {
+    color: #9D7150; /* Couleur du placeholder */
+}
+
+/* Style des boutons */
+.login button, .register button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #A65437; /* Couleur de fond */
+    color: #FFFFFF; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Effet d'animation */
+}
+
+/* Effet de survol sur les boutons */
+.login button:hover, .register button:hover {
+    background-color: #D98C5F; /* Changement de couleur au survol */
+    transform: translateY(-2px); /* Léger déplacement vers le haut */
+}
+
+/* Ajout d'une bordure à la section d'inscription */
+.login .register {
+    border: 1px solid #D98C5F; /* Bordure subtile */
+}
+
+/* Effet au survol des champs de saisie */
+.login input:hover, .register input:hover {
+    border-color: #D98C5F; /* Changement de couleur de la bordure */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+/* Bloc d'aide (lien vers inscription/connexion) */
+.help {
+    margin-top: 10px;
+}
+
+/* Effet au survol du texte dans la section d'aide */
+.help span:hover {
+    font-weight: bolder; /* Texte en gras */
+    cursor: pointer; /* Curseur en forme de main */
+}
+
+/* Masquer la section d'inscription par défaut */
+.register {
+    display: none;
+}
+
+/* Icônes dans les formulaires */
+form i {
+    color: #A65437;
+    cursor: pointer; /* Curseur interactif */
+    margin-left: 10px;
+}

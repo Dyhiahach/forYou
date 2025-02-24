@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site responsive sur mobile -->
+    <title>ForYou | connexion</title> <!-- Titre affiché dans l'onglet du navigateur -->
+    
+    <!-- Liens vers les fichiers CSS -->
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/connect.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/logo.css">
+
+    <!-- Lien vers la bibliothèque FontAwesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/a6c1691723.js" crossorigin="anonymous"></script>
+
+    <!-- Inclusion de jQuery -->
+    <script src="../jquery-3.7.1.js"></script>
+</head>
+<body>
+    <!-- Début du header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <!-- Logo du site -->
+                <p class="logo">For<span class="highlight">You</span><span id="sp">.</span></p>
+            </div>
+            <nav>
+                <ul>
+                    <!-- Liens de navigation -->
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#contact">Contact </a></li>
+                    <li><a href="#connexion" id="profile-link">Profil</a></li>
+                    <!-- Icône de fermeture du menu -->
+                    <p class="icon">close<i class="fas fa-times" onclick="closemenu()"></i></p>
+                </ul>
+                <!-- Icône pour ouvrir le menu -->
+                <p class="icon"><i class="fas fa-bars" onclick="openmenu()"></i>open</p>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section de connexion -->
+    <section id="connexion">
+        <div class="connexion-container">
+            <!-- Bloc de connexion -->
+            <div class="login active">
+                <h1>Connexion</h1>
+                <form action="../php/login.php" method="post" class="login-form">
+                    <!-- Champ email -->
+                    <label for="userEmail">
+                        <i class="fa-solid fa-envelope"></i> Email:
+                    </label>
+                    <input type="email" name="userEmail"  id="userEmail" placeholder="votre email" required>
+    
+                    <!-- Champ mot de passe -->
+                    <label for="pwd">
+                        <i class="fa-solid fa-lock"></i> Mot De Passe:
+                    </label>
+                    <div id="pwdd">
+                        <input type="password" name="pwd" placeholder="mot de passe " required id="pass-login">
+                        <!-- Icône pour afficher/masquer le mot de passe -->
+                        <i class="fa-solid fa-eye-slash" id="eye" onclick="togglePassword('pass-login', this)"></i>
+                    </div>
+                    
+                    <!-- Bouton de connexion -->
+                    <button type="submit" class="btn btn2">Connecter</button>
+                </form>
+                <div class="help">
+                    <!-- Lien vers l'inscription -->
+                    <p>Vous n'avez pas encore de compte? <span>s'inscrire</span></p>
+                </div>
+            </div>
+
+            <!-- Bloc d'inscription -->
+            <div class="register desactive">
+                <h1 class="ins">Inscription</h1>
+                <form action="../php/register.php" method="post" class="register-form">
+                    <!-- Champ nom d'utilisateur -->
+                    <label for="userName">
+                        <i class="fa-solid fa-user"></i>Nom D'Utilisateur
+                    </label>
+                    <input type="text" name="userName" placeholder="votre nom" required>
+
+                    <!-- Champ email -->
+                    <label for="userEmail">
+                        <i class="fa-solid fa-envelope"></i> Email:
+                    </label>
+                    <input type="email" name="userEmail" placeholder="votre email" required>
+
+                    <!-- Champ mot de passe -->
+                    <label for="pwd">
+                        <i class="fa-solid fa-lock"></i> Mot De Passe:
+                    </label>
+                    <div id="pwdd">
+                        <input type="password" name="pwd" placeholder="mot de passe" required id="pass-register">
+                        <!-- Icône pour afficher/masquer le mot de passe -->
+                        <i class="fa-solid fa-eye-slash" id="eye" onclick="togglePassword('pass-register', this)"></i>
+                    </div>
+
+                    <!-- Bouton d'inscription -->
+                    <button type="submit" class="btn btn2">Inscrire</button>
+                </form>
+                <div class="help">
+                    <!-- Lien vers la connexion -->
+                    <p>Vous avez déja un compte ? <span>se connecter</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="../js/conect.js"></script>
+</body>
+</html>
