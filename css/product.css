@@ -1,0 +1,94 @@
+/* Définit la couleur de fond de l'ensemble du body */
+.body{
+    background-color: #FFCBA1; /* Orange clair */
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: #FFCBA1; /* Même couleur que le body */
+}
+
+/* Supprime l'image de fond du header */
+header {
+    background-image: none;
+}
+
+/* Section des produits : mise en page flexible */
+#product {
+    display: flex; /* Utilise flexbox pour l'agencement des produits */
+    flex-wrap: wrap; /* Permet le retour à la ligne si l'écran est petit */
+    justify-content: center; /* Centre les produits horizontalement */
+    gap: 35px; /* Espace entre les produits */
+}
+
+/* Style individuel d'un produit */
+.product {
+    width: 300px; /* Largeur fixe du produit */
+    height: 450px; /* Hauteur fixe du produit */
+    display: block;
+    border: 2px solid #A65437; /* Bordure marron */
+    background-color: #FFE1CD; /* Beige clair */
+    margin: 30px 0; /* Marge verticale */
+    margin-top: 100px; /* Décalage vers le bas */
+}
+
+/* Style de l'image du produit */
+.product-image img {
+    border-radius: 10px; /* Arrondi des bords */
+    width: 260px; /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+    margin: 20px; /* Marge interne autour de l'image */
+}
+
+/* Style du nom du produit */
+.product-name {
+    text-align: center; /* Centrer le texte */
+    color: #A65437; /* Marron */
+}
+
+/* Style de la description du produit */
+.product-description {
+    color: #9D7150; /* Marron clair */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style du prix du produit */
+.product-price {
+    text-align: center; /* Centrer le prix */
+    color: #A65437; /* Marron */
+    font-size: 16px;
+    font-weight: bolder; /* Texte en gras */
+}
+
+/* Effet au survol du prix */
+.product-price:hover {
+    font-size: 20px; /* Agrandit la taille du texte au survol */
+}
+
+/* Style du bouton "Ajouter au panier" */
+button {
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 16px; /* Taille du texte */
+    background-color: #A65437; /* Marron */
+    color: #FFFFFF; /* Texte blanc */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en main au survol */
+    transition: background-color 0.3s; /* Animation fluide */
+    margin: 30px 60px; /* Marges pour positionner le bouton */
+}
+
+/* Effet au survol du bouton */
+button:hover {
+    background-color: #D98C5F; /* Changement de couleur au survol */
+}
+
+/* Effet au survol des liens de navigation */
+nav ul li a:hover {
+    color: #A65437; /* Changement de couleur du texte */
+}
+
+/* Effet visuel sous les liens de navigation */
+nav ul li a::after {
+    background-color: #A65437; /* Ligne sous le lien */
+}

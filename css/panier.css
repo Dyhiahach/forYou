@@ -1,0 +1,100 @@
+/* Style global du corps de la page */
+body {
+    background-color: #FFE1CD; /* Couleur de fond orange clair pour un aspect chaleureux */
+    font-family: Arial, sans-serif; /* Police de caractères Arial avec une alternative sans-serif */
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Centrage vertical des éléments */
+    justify-content: space-between; /* Répartition de l'espace entre les éléments */
+    max-width: 1500px; /* Largeur maximale de la barre de navigation */
+    padding: 20px; /* Espacement intérieur de 20px */
+    background-color: #FFCBA1; /* Couleur de fond orange plus foncé */
+}
+
+/* Style des liens dans la barre de navigation */
+.navbar li a {
+    text-decoration: none; /* Suppression du soulignement des liens */
+    color: #A65437; /* Couleur du texte en marron */
+    font-weight: bold; /* Texte en gras */
+    padding: 10px 15px; /* Espacement intérieur autour du texte */
+    border-radius: 5px; /* Coins arrondis pour les liens */
+    transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur de fond */
+}
+
+/* Style des liens au survol */
+.navbar li a:hover {
+    background-color: #FFD7A9; /* Changement de couleur de fond en orange clair au survol */
+}
+
+/* Style de la section du panier */
+#panier {
+    border: 3px solid #A65437; /* Bordure marron de 3px */
+    margin: 50px auto; /* Centrage horizontal avec une marge de 50px en haut et en bas */
+    background-color: #FFCBA1; /* Couleur de fond orange foncé */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 10px; /* Coins arrondis pour la section */
+}
+
+/* Style du titre du panier */
+#panier h1 {
+    text-align: center; /* Centrage horizontal du texte */
+    font-size: 30px; /* Taille de la police à 30px */
+    margin: 20px 0; /* Marge de 20px en haut et en bas */
+}
+
+/* Style du tableau du panier */
+#panier table {
+    width: 100%; /* Tableau responsive prenant toute la largeur disponible */
+    border-collapse: collapse; /* Fusion des bordures des cellules */
+    border: 1px solid #A65437; /* Bordure marron de 1px */
+    border-spacing: 0; /* Suppression de l'espacement entre les cellules */
+}
+
+/* Style des cellules du tableau (en-têtes et données) */
+#panier th, #panier td {
+    padding: 10px; /* Espacement intérieur */
+    text-align: center; /* Centrage horizontal du texte */
+    border: 1px solid #A65437; /* Bordure marron de 1px */
+}
+
+/* Style des en-têtes du tableau */
+#panier th {
+    background-color: #FFD7A9; /* Couleur de fond orange clair pour les en-têtes */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style des boutons de quantité */
+.quantity {
+    padding: 10px 20px; /* Espacement intérieur */
+    font-size: 16px; /* Taille de la police à 16px */
+    background-color: #A65437; /* Couleur de fond marron */
+    color: #FFFFFF; /* Couleur du texte en blanc */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de pointeur */
+    transition: background-color 0.3s; /* Transition fluide pour le changement de couleur de fond */
+    margin: 5px; /* Marge autour des boutons */
+}
+
+/* Style des boutons de quantité au survol */
+.quantity:hover {
+    background-color: #D98C5F; /* Changement de couleur de fond en marron plus clair au survol */
+}
+
+/* Style des cellules du tableau */
+#panier td {
+    border: 1px solid #A65437; /* Bordure marron de 1px */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px; /* Espacement intérieur */
+}
+
+/* Style des images dans les cellules */
+td img {
+    border-radius: 10px; /* Coins arrondis pour les images */
+    width: 260px; /* Largeur fixe des images */
+    height: 200px; /* Hauteur fixe des images */
+    margin: 10px; /* Marge autour des images */
+}
