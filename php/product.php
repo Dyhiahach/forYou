@@ -49,7 +49,12 @@ include("db_connect.php");
                                 <span class="nbr">(0)</span> <!-- Placeholder pour le nombre d'articles dans le panier -->
                             </a>
                         </li>
-                        <li class="exit">Déconnexion <i class="fa-solid fa-right-from-bracket"></i></li>
+                        <li class="exit">
+                            <a href="logout.php">
+                                Déconnexion
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
