@@ -1,0 +1,182 @@
+header {
+    background-image: none;
+}
+
+.navbar {
+    padding-right: 230px;
+    background-color: #FFCBA1;
+}
+
+nav ul li a:hover {
+    color: #A65437;
+}
+
+nav ul li a::after {
+    background-color: #A65437;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFE1CD;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour plus de profondeur */
+    margin: 50px 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #A65437;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+input, textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #A65437;
+    border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #9D7150; /* Couleur des placeholders */
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #A65437; /* Couleur du bouton */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #D98C5F; /* Couleur au survol */
+    transform: translateY(-2px);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #A65437; /* Couleur des titres */
+}
+
+input:hover, textarea:hover {
+    border-color: #D98C5F; /* Bordure au survol */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+}
+
+.product-name {
+    text-align: center;
+    color: #A65437;
+}
+
+.product-description {
+    color: #9D7150;
+    text-align: center;
+}
+
+/* Style général pour le tableau */
+#product-table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: #FFE1CD; /* Couleur de fond du tableau */
+    border: 2px solid #A65437; /* Bordure du tableau */
+    margin: 20px 0; /* Espacement autour du tableau */
+}
+
+/* Style pour les en-têtes du tableau */
+#product-table thead {
+    background-color: #FFCBA1; /* Couleur de fond des en-têtes */
+}
+
+#product-table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #A65437; /* Couleur du texte des en-têtes */
+    border-bottom: 2px solid #A65437; /* Bordure inférieure des en-têtes */
+}
+
+/* Style pour les cellules du tableau */
+#product-table td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #A65437; /* Bordure inférieure des cellules */
+}
+
+/* Style pour les images dans les cellules du tableau */
+#product-table td img {
+    border-radius: 10px;
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+}
+
+/* Style pour les lignes alternées du tableau */
+#product-table tbody tr:nth-child(even) {
+    background-color: #FFF4E6; /* Couleur de fond pour les lignes paires */
+}
+
+#product-table tbody tr:nth-child(odd) {
+    background-color: #FFE1CD; /* Couleur de fond pour les lignes impaires */
+}
+
+/* Style pour les boutons dans les cellules d'action */
+#product-table td button {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px; /* Espacement entre les boutons */
+}
+
+/* Style pour le bouton de mise à jour */
+#product-table td .update-btn {
+    background-color: #A65437; /* Couleur du bouton de mise à jour */
+}
+
+#product-table td .update-btn:hover {
+    background-color: #D98C5F; /* Couleur au survol */
+    transform: translateY(-2px);
+}
+
+/* Style pour le bouton de suppression */
+#product-table td .delete-btn {
+    background-color: #A65437; /* Couleur du bouton de mise à jour *//
+}
+
+#product-table td .delete-btn:hover {
+    background-color: #D98C5F; /* Couleur au survol */
+    transform: translateY(-2px);
+}
+
+/* Style pour les inputs de type number dans les cellules du tableau */
+#product-table td .quantity {
+    width: 100px; /* Ajustez la largeur selon vos besoins */
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #A65437; /* Bordure de l'input */
+    border-radius: 5px;
+    background-color: #A65437; /* Couleur de fond de l'input */
+}
